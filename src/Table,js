@@ -21,12 +21,13 @@ return (
       console.log(props.data)
     }
       <MaterialTable
-        title="Your Title"
+        title="Character List"
         columns={gridData.columns}
         data={props.data}
         options={{
           search: true,
-          filtering:true
+          filtering:true,
+          pageSize: 25,
         }}
         
       />
